@@ -5,6 +5,7 @@ import GameLevel from './GameLevel.js';
 import Background from './Background.js'
 import BackgroundHills from './BackgroundHills.js';
 import BackgroundMountains from './BackgroundMountains.js';
+import BackgroundClouds from './BackgroundClouds.js';
 import Platform from './Platform.js';
 import JumpPlatform from './JumpPlatform.js';
 import Player from './Player.js';
@@ -172,6 +173,7 @@ const GameSetup = {
         hills: { src: "/images/platformer/backgrounds/hills.png" },
         avenida: { src: "/images/platformer/backgrounds/avenida.png" },
         mountains: { src: "/images/platformer/backgrounds/mountains.jpg" },
+        clouds: { src: "/images/platformer/backgrounds/clouds.jpg"},
         planet: { src: "/images/platformer/backgrounds/planet.jpg" },
         castles: { src: "/images/platformer/backgrounds/castles.png" },
         end: { src: "/images/platformer/backgrounds/game_over.png" }
@@ -274,6 +276,7 @@ const GameSetup = {
         const hillsGameObjects = [
         // GameObject(s), the order is important to z-index...
         { name: 'mountains', id: 'background', class: BackgroundMountains,  data: this.assets.backgrounds.mountains },
+        { name: 'clouds', id: 'background', class: BackgroundClouds, data: this.assets.backgrounds.clouds },
         { name: 'hills', id: 'background', class: BackgroundHills, data: this.assets.backgrounds.hills },
         { name: 'grass', id: 'platform', class: Platform, data: this.assets.platforms.grass },
         { name: 'bricks', id: 'jumpPlatform', class: JumpPlatform, data: this.assets.platforms.bricks },
